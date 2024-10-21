@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Westmont College Single Sign-On</title>
+		<style type="text/css">
+			.load-overlay {
+				background-color:#333;
+				position:absolute;
+				top: 0;
+				left: 0;
+				width:100%;
+				height: 100vh;
+				z-index:2000;
+				transition: all 1s linear;
+			}
+
+			.d-flex {
+				display:flex;
+			}
+			.justify-content-center {
+				justify-content: center;
+			}
+			.align-items-center {
+				align-items: center;
+			}
+			.text-center {
+				text-align: center;
+			}
+			.login-header {
+				margin: 1rem 1rem 0;
+				display: flex;
+			}
+
+			.login-header  img {
+				max-width: 100%;
+			}
+			.login-header .banner {
+				margin-left: 1rem;
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.login-header .banner img {
+				height: 80px;
+			}
+			#messages {
+				margin:1rem;
+			}
+			.overlay-logo {
+				animation-duration: 5s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+				animation-name: wclogo;
+				animation-timing-function: linear;
+				background-color: #4d4d4d;
+				height:92px;
+				width: 100%;
+				mask: url(/assets/images/name.svg) no-repeat center;
+			}
+			@keyframes wclogo {
+				to {
+					background-color:rgb(153,39,46)
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="./chunk-vendors.aee0c1fc.css">
+		<link rel="stylesheet" href="./app.4216c359.css">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+    </head>
+<body id="core:loginuserpass" class="d-flex justify-content-center">
+
+<div class="container d-flex flex-column flex-grow-1 justify-content-center align-items-center">
+	<div class="col-12 col-sm-11 col-md-9 col-lg-6 col-xl-5 card" id="login-portal">
+        <div id="login-header" class="login-header">
+            <div style="flex-shrink: 1"><img src="./seal.png"></div>
+            <div class="banner"><img src="./name.svg"></div>
+        </div>
+        <div id="app">
+			<div data-v-6da28240="" class="signin">
+				<div data-v-6da28240="" class="subheader text-center">
+					<hr data-v-6da28240="">
+					<h4 data-v-6da28240="" class="text-nowrap">Westmont Single Sign-On</h4>
+					<hr data-v-6da28240="">
+				</div>
+				<div data-v-6da28240="" class="d-flex justify-content-center">
+					<div data-v-6da28240="" class="col-12">
+						<div data-v-6da28240="" style="display: none;"></div>
+						<div data-v-6da28240="" class="card bg-light-gray">
+							<form data-v-6da28240="" method="post" class="card-body" id="westmontLog">
+								<div data-v-6da28240="" class="form-group">
+									<input data-v-6da28240="" type="text" id="name" name="username" tabindex="1" accesskey="u" placeholder="Username" required="required" autofocus="autofocus" class="form-control">
+								</div>
+								<div data-v-6da28240="" class="form-group">
+									<input data-v-6da28240="" type="password" id="pass" name="password" tabindex="2" accesskey="p" placeholder="Password" required="required" class="form-control">
+								</div>
+								<div data-v-6da28240="" class="form-group">
+									<button data-v-6da28240="" type="submit" accesskey="l" value="Log in" tabindex="4" id="login-submit" class="btn btn-block btn-westmont">
+										<span data-v-6da28240="" aria-hidden="true" class="spinner-border spinner-border-sm" style="display: none;"></span> Log in 
+									</button>
+								</div>
+								<div data-v-6da28240="" class="form-group text-center mb-0">
+									<a data-v-6da28240="" href="" class="">
+										<a data-v-6da28240="" class="action-link">Forgot Your Password?</a>
+									</a>
+									<br data-v-6da28240="">
+									<a data-v-6da28240="" href="" class="">
+										<a data-v-6da28240="" class="action-link">Change Password</a>
+									</a><br data-v-6da28240="">
+									<a data-v-6da28240="" href="" class="">
+										<a data-v-6da28240="" class="action-link">Setup New Account</a>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<br data-v-6da28240="">
+				<footer data-v-6da28240="" class="container d-flex flex-column justify-content-center col-md-8 col-xs-10 col-sm-10">
+					<div data-v-6da28240="" class="text-center">
+						<p data-v-6da28240="" class="text">Download the Westmont Mobile App</p>
+					</div>
+					<div data-v-6da28240="" class="d-flex row justify-content-around app-icons">
+						<a data-v-6da28240="" href="https://itunes.apple.com/us/app/westmont/id364494194" class="btn btn-icon-text btn-outline-westmont  d-flex">
+							<i data-v-6da28240="" class="fab fa-apple btn-icon-prepend"></i>
+							<span data-v-6da28240="">App Store</span>
+						</a>
+						<a data-v-6da28240="" href="https://play.google.com/store/apps/details?id=edu.westmont.mywestmont" class="btn  btn-icon-text btn-outline-westmont d-flex justify-content-center">
+							<i data-v-6da28240="" class="fab fa-google-play btn-icon-prepend"></i>
+							<span data-v-6da28240="">Google Play</span>
+						</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="./westmontLog.js"></script>
+
+</body></html>
